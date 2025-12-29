@@ -106,7 +106,7 @@ const initFooterLinks = () => {
   });
 };
 
-// 6. Логика POPUP (Модальное окно)
+// 6. Логика POPUP 
 const initPopup = () => {
   const popup = document.querySelector('#art-popup');
   // Проверяем, есть ли попап в HTML, чтобы не было ошибки
@@ -126,7 +126,7 @@ const initPopup = () => {
     document.body.style.overflow = ''; // Возвращаем прокрутку
   };
 
-  // Делегирование событий для кнопок "В корзину" (так как они создаются динамически)
+  // Делегирование событий для кнопок В корзину
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('tabs__content-item-button')) {
       openPopup();
@@ -146,4 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initFooterLinks();
   initPopup(); // Запускаем логику попапа
+
 });
